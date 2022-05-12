@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* TEXT STYLES */
+
+body, html {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h1, h2, .step p {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 3.052rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.563rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.8)
+}
+
+h3 {
+  font-size: 1.563rem;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+h4 {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.953rem;
+}
+
+.byline {
+  display: inline-block;
+  padding-top: 0px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.byline hr {
+  margin: 0;
+  margin-bottom: 5px;
+  border-top: 1px solid #FFF;
+  width: 100%;
+}
+
+.byline hr::after {
+  content: none;
+}
+
+blockquote.pull-quote {
+  font-size: 2.441rem;
+  font-weight: 800;
+  margin: 70px -80px;
+}
+
+a {
+  color: #333;
+}
+
+figcaption {
+  color: #777;
+  padding-top: 5px;
+}
+
+footer p, footer ul {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+footer {
+  font-style: italic;
+}
+
+mark {
+  background-color: #fbc531;
+}
+
+.center {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+/* LAYOUT */
+
+article {
+  position: relative;
+  margin: 0;
+}
+
+figure {
+  margin: 70px 0;
+}
+
+hr {
+  width: 200px;
+  border: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+hr:after {
+  content:"...";
+  letter-spacing: 15px;
+}
+
+/* HERO SECTION */
+
+.hero-image {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: -1;
+
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+}
+
+.visible {
+  opacity: 1 !important;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.column-right {
+  width: 500px;
+  margin-top: -50vh;
+  color: #fff;
+  padding-right: 30px;
+}
+
+.spacer {
+  height: 100vh;
+}
+
+.step {
+  color: #fff;
+  padding-bottom: 100vh;
+}
+
+div.bordered p {
+  background-color: rgba(0,0,0,0.8);
+  padding: 20px 25px;
+}
+
+.step p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* INTRO SECTION */
+
+.content {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* SCORING SECTION */
+
+section#scoring-section .content {
+  padding-bottom: 0;
+}
+
+/* ADVANTAGE SECTION */
+
+section#advantage-section-women .content {
+  padding-top: 0;
+}
+
+section#advantage-section-men .content {
+  padding-bottom: 50px;
+}
+
+figure.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  z-index: -1;
+  margin: 0px -80px;
+}
+
+figure.sticky table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+div.step-alt {
+  border: 3px solid #333;
+  padding: 0px;
+  background-color: rgba(255,255,255,1);
+  margin-bottom: 90vh;
+  box-shadow: 5px 10px #333;
+}
+
+.step-alt p {
+  color:#333;
+  padding: 20px 25px;
+  text-shadow: none;
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+div.end-overlap {
+  margin-bottom: 40vh;
+}
+
+figure.image {
+  margin: 0 -100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+figure.image img {
+  max-width: 100%;
+}
+
+/* QUALIFACTION EVENTS SECTION */
+
+section#qualification-events .content {
+  padding-top: 0;
+}
+
+figure.table figcaption {
+  padding-top: 15px;
+}
+
+/* TABLES */
+
+table {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding-right: 20px;
+  border-bottom: 3px solid #333;
+  margin-right: 20px;
+}
+
+td {
+  border-bottom: 1px solid #333;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+div.cell-inner {
+  height: 0;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+  .column-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  section#explainer .column-right {
+    margin-top: 40vh;
+  }
+
+  .hero-image {
+    padding: 0;
+  }
+
+  .hero-image img {
+    padding: 0;
+  }
+
+  .content {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+  }
+
+  .content-wrapper {
+    width: 100%;
+    display: block;
+    padding: 0 20px;
+    margin-top: -100vh;
+  }
+
+  .hero-text {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+
+  div.step p {
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px 25px;
+  }
+
+  div.step-alt {
+    border: 3px solid #333;
+    padding: 0px;
+    background-color: rgba(255,255,255,1);
+    margin-bottom: 90vh;
+    box-shadow: 5px 10px #333;
+  }
+  
+  div.step-alt p {
+    background-color: transparent;
+    color:#333;
+    padding: 20px 25px;
+    text-shadow: none;
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  blockquote.pull-quote {
+    font-size: 1.563rem;
+    font-weight: 800;
+    margin: 50px 0px;
+  }
+
+  figure.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+    z-index: -1;
+    margin: 0px;
+  }
+  
+  figure.sticky table {
+    width: 100%;
+    table-layout: auto;
+    font-size: 0.8em;
+  }
+
+  th {
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  figure.sticky h3 {
+    font-size: 1.25rem;
+  }
+
+  figure.image {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  
+  figure.image img {
+    max-width: 100%;
+  }
+
+  figure.image figcaption {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
